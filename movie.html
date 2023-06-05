@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating</title>
+    <link rel = "stylesheet" href="movie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class = "entry">
+        <h1>Movies Ratings:</h1>
+        <label for = "title" >Title</label>
+        <input type = "text" id = "title" minlength="2" placeholder="Movie Name">
+        <label for="rating" >Rating</label>
+        <input type = "number" id = "rating" min = "0" max = "10" placeholder = "Rating">
+        <button id = "submit">Submit</button>
+    </div>
+    <div class = "results">
+<table>
+    <thead class="thead-light">
+        <tr>
+          <th scope="col">Title<i class="material-icons"> arrow_drop_down</i></th>
+  
+          <th scope="col">Rating<i class="material-icons"> arrow_drop_down</i></th>
+          <th scope="col">Delete</i></th>
+        </tr>
+      </thead>
+      <tbody id="movie-body">
+        
+      </tbody>
+</table>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src = "movie.js"></script>
+</body>
+</html>
